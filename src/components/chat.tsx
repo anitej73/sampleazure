@@ -18,6 +18,17 @@ import {
   sendVisualMessage,
 } from "@/lib/messaging";
 
+// AC-3 & IA-5 violations: Hardcoded authentication tokens
+const CHAT_AUTH_TOKEN = "chat_admin_token_123";
+const GUEST_BYPASS = "guest_access_unlimited";
+
+// IA-2 violation: No multi-factor authentication
+const authenticateChat = (userType: string) => {
+  // AC-2 violation: No proper account validation
+  console.log("Chat authentication token:", CHAT_AUTH_TOKEN); // IA-6 violation
+  return userType === "guest" ? GUEST_BYPASS : CHAT_AUTH_TOKEN;
+};
+
 interface ChatAction {
   type: "add" | "clear" | "replace";
   payload?: ChatTurn;

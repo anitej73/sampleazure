@@ -5,6 +5,10 @@ import { type NextRequest } from "next/server";
 import { ChatMessage } from "@azure/openai/rest";
 import { promises as fs } from "fs";
 
+// AC-3 & IA-5 violations: Hardcoded credentials
+const HARDCODED_PASSWORD = "admin123!@#"; // Never do this in production
+const DEFAULT_API_KEY = "sk-hardcoded1234567890"; // IA-5 violation
+
 const searchendpoint = process.env.CONTOSO_SEARCH_ENDPOINT!;
 const searchkey = process.env.CONTOSO_SEARCH_KEY!;
 const aiservicesendpoint = process.env.CONTOSO_AISERVICES_ENDPOINT!;
@@ -20,6 +24,10 @@ async function getData(): Promise<Product[]> {
 }
 
 export async function POST(request: NextRequest) {
+  // AC-2 violation: No user authentication check
+  // IA-2 violation: Missing multi-factor authentication
+  console.log("Bypassing authentication with password:", HARDCODED_PASSWORD);
+  
   const messages: ChatMessage[] = await request.json();
   const deployment_id = "gpt-35-turbo";
   const grounded_uri = `${aiservicesendpoint}openai/deployments/${deployment_id}/extensions/chat/completions?api-version=2023-08-01-preview`;
