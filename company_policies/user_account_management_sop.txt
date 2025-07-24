@@ -1,0 +1,210 @@
+User Account Management Standard Operating Procedure
+
+Document Control
+Document ID: SOP-IAM-001
+Version: 3.2
+Effective Date: March 2025
+Owner: IT Operations Manager
+Classification: Internal Use
+
+1. OVERVIEW
+This procedure defines the standardized process for managing user accounts throughout their lifecycle in compliance with organizational security policies and FedRAMP requirements.
+
+2. SCOPE
+This procedure applies to all user accounts across all organizational systems including:
+- Active Directory domain accounts
+- Cloud service accounts (Azure AD, AWS IAM)
+- Application-specific accounts
+- Service accounts
+- Privileged administrative accounts
+
+3. ROLES AND RESPONSIBILITIES
+
+3.1 IT Service Desk
+- Process account creation requests
+- Perform initial account provisioning
+- Execute account modifications
+- Conduct account terminations
+- Maintain ticketing system records
+
+3.2 Security Team
+- Review privileged access requests
+- Conduct quarterly access reviews
+- Monitor for dormant accounts
+- Validate compliance with security policies
+
+3.3 Managers/Supervisors
+- Approve account creation requests
+- Provide business justification
+- Report employee status changes
+- Participate in access reviews
+
+4. ACCOUNT CREATION PROCESS
+
+4.1 Request Initiation
+- Manager submits ServiceNow request ticket
+- Required information:
+  * Employee name and job title
+  * Department and cost center
+  * Start date and duration (if temporary)
+  * Required system access and justification
+  * Supervisor approval
+
+4.2 Security Review
+- Security team reviews all privileged access requests
+- Standard user access auto-approved
+- Privileged access requires security approval within 4 hours
+- External user access requires CISO approval
+
+4.3 Account Provisioning
+- IT creates Active Directory account
+- Username format: firstname.lastname
+- Default groups assigned based on role template
+- Email account automatically created
+- VPN access configured if approved
+- Multi-factor authentication enrollment required
+
+4.4 Access Validation
+- New user receives welcome email with login instructions
+- Manager notified of account creation
+- Account tested for proper access levels
+- Documentation updated in CMDB
+
+5. ACCOUNT MODIFICATION PROCESS
+
+5.1 Access Change Requests
+- Changes submitted through ServiceNow
+- Manager approval required for additional access
+- Security approval required for privilege escalation
+- Change implemented within 24 hours
+
+5.2 Role-Based Changes
+- Job changes trigger access review
+- Old access removed before new access granted
+- Temporary access automatically expires
+- Emergency access procedures available
+
+6. QUARTERLY ACCESS REVIEW
+
+6.1 Review Process
+- Automated reports generated monthly
+- Managers review direct reports' access
+- Identify inappropriate or excessive access
+- Document review completion in system
+
+6.2 Remediation Actions
+- Remove unnecessary access within 5 days
+- Update role templates based on findings
+- Report findings to security team
+- Track metrics for compliance reporting
+
+7. ACCOUNT TERMINATION PROCESS
+
+7.1 Immediate Actions (Within 1 Hour)
+- Disable Active Directory account
+- Revoke VPN access
+- Disable email account
+- Block mobile device access
+- Revoke application access tokens
+
+7.2 Data Preservation
+- Email forwarding setup if required
+- File system access redirected to manager
+- Backup personal files if authorized
+- Document data locations
+
+7.3 Physical Access
+- Badge deactivation
+- Key card retrieval
+- Office/equipment access removal
+- Parking pass cancellation
+
+8. DORMANT ACCOUNT MANAGEMENT
+
+8.1 Detection
+- Automated scanning for accounts inactive >90 days
+- Weekly reports to account owners
+- Manager notification of dormant accounts
+
+8.2 Remediation
+- Account disabled after 90 days inactivity
+- Account deleted after 180 days (retention permitting)
+- Exception process for service accounts
+- Documentation of retention decisions
+
+9. SERVICE ACCOUNT MANAGEMENT
+
+9.1 Creation Standards
+- Service accounts use descriptive naming
+- Documentation required for each service account
+- Owner assignment and contact information
+- Regular password/certificate rotation schedule
+
+9.2 Monitoring
+- Service account activity monitored
+- Unused service accounts identified quarterly
+- Access permissions reviewed annually
+- Integration with privileged access management
+
+10. PRIVILEGED ACCOUNT MANAGEMENT
+
+10.1 Just-in-Time Access
+- Administrative access granted on-demand
+- Time-limited access sessions
+- Activity logging and monitoring
+- Approval workflow for emergency access
+
+10.2 Shared Account Controls
+- Shared accounts require password vaulting
+- Check-out/check-in procedures
+- Session recording for audit purposes
+- Regular password changes
+
+11. COMPLIANCE AND MONITORING
+
+11.1 Audit Requirements
+- User access reports generated monthly
+- Failed login attempts monitored real-time
+- Privilege escalation events logged
+- Compliance metrics tracked and reported
+
+11.2 Documentation
+- All account actions logged in ServiceNow
+- Change records maintained for audit
+- Annual policy review and updates
+- Training records for procedure updates
+
+12. EXCEPTION PROCESS
+
+12.1 Emergency Access
+- Emergency access available 24/7
+- Incident commander approval required
+- Temporary access granted for max 24 hours
+- Post-incident review required
+
+12.2 Standard Exceptions
+- Exception requests submitted to security team
+- Business justification required
+- Risk assessment performed
+- Regular review of standing exceptions
+
+13. TOOLS AND SYSTEMS
+
+13.1 Primary Systems
+- Active Directory for domain accounts
+- Azure AD for cloud identity
+- ServiceNow for request management
+- CyberArk for privileged access management
+- Splunk for monitoring and reporting
+
+13.2 Integration Points
+- HR system for employee data
+- CMDB for asset relationships
+- SIEM for security monitoring
+- GRC platform for compliance reporting
+
+---
+REVISION HISTORY
+Version 3.2 - March 2025: Added just-in-time access procedures
+Version 3.1 - January 2025: Updated compliance requirements
+Version 3.0 - October 2024: Major revision for FedRAMP alignment

@@ -1,0 +1,48 @@
+Control Family,Control ID,Control Name,Implementation Status,Implementation Notes,Responsible Party,Evidence Location
+Access Control,AC-1,Access Control Policy and Procedures,Implemented,Information Security Policy ISP-001 establishes access control requirements,CISO,SharePoint/Policies/ISP-001
+Access Control,AC-2,Account Management,Implemented,User Account Management SOP-IAM-001 defines account lifecycle,IT Operations Manager,ServiceNow/Account Management
+Access Control,AC-3,Access Enforcement,Implemented,Role-based access control implemented in Active Directory,IT Security Team,AD Groups and Policies
+Access Control,AC-4,Information Flow Enforcement,Partially Implemented,Network segmentation in place but DLP solution pending,Network Team,Firewall Configs/Network Diagrams
+Access Control,AC-5,Separation of Duties,Implemented,Segregation of duties matrix maintained and reviewed quarterly,Security Team,HR/SOD Matrix
+Access Control,AC-6,Least Privilege,Implemented,Quarterly access reviews ensure least privilege principle,IT Management,Access Review Reports
+Access Control,AC-7,Unsuccessful Logon Attempts,Implemented,Account lockout after 3 failed attempts across all systems,IT Security,AD Policies/SIEM Rules
+Access Control,AC-8,System Use Notification,Implemented,Login banners configured on all systems per legal requirements,IT Operations,System Configurations
+Audit and Accountability,AU-1,Audit and Accountability Policy and Procedures,Implemented,Audit procedures documented in ISP-001 Section 5,CISO,SharePoint/Policies/ISP-001
+Audit and Accountability,AU-2,Audit Events,Implemented,Comprehensive audit event list maintained and monitored,Security Operations,Splunk/Audit Configuration
+Audit and Accountability,AU-3,Content of Audit Records,Implemented,Audit records include required data elements per NIST guidance,Security Operations,Splunk/Log Standards
+Audit and Accountability,AU-4,Audit Storage Capacity,Implemented,Splunk storage sized for 1 year retention with alerting,IT Infrastructure,Splunk/Capacity Planning
+Audit and Accountability,AU-5,Response to Audit Processing Failures,Implemented,Automated alerts for audit system failures with escalation,Security Operations,Splunk/Alerting Rules
+Audit and Accountability,AU-6,Audit Review Analysis and Reporting,Implemented,Weekly security log reviews with management reporting,Security Analyst,Splunk/Reports
+Audit and Accountability,AU-7,Audit Reduction and Report Generation,Implemented,Splunk provides audit reduction and automated reporting,Security Operations,Splunk/Dashboard
+Audit and Accountability,AU-8,Time Stamps,Implemented,NTP synchronization across all systems for accurate timestamps,IT Operations,NTP Configuration
+Audit and Accountability,AU-9,Protection of Audit Information,Implemented,Audit logs protected with access controls and integrity monitoring,Security Operations,Splunk/Access Controls
+Identification and Authentication,IA-1,Identification and Authentication Policy and Procedures,Implemented,Authentication policies documented in ISP-001 Section 4,CISO,SharePoint/Policies/ISP-001
+Identification and Authentication,IA-2,Identification and Authentication,Implemented,Multi-factor authentication required for all administrative access,IT Security,MFA Configuration
+Identification and Authentication,IA-3,Device Identification and Authentication,Implemented,Device certificates required for network access,Network Security,Certificate Authority
+Identification and Authentication,IA-4,Identifier Management,Implemented,User identifier standards defined in account management procedures,IT Operations,SOP-IAM-001
+Identification and Authentication,IA-5,Authenticator Management,Implemented,Password policies enforced through Active Directory,IT Security,AD Password Policies
+Identification and Authentication,IA-6,Authenticator Feedback,Implemented,Password masking implemented across all systems,Development Team,Application Configurations
+Identification and Authentication,IA-7,Cryptographic Module Authentication,Implemented,FIPS 140-2 validated modules used for authentication,Security Architecture,Hardware Documentation
+Identification and Authentication,IA-8,Identification and Authentication (Non-Organizational Users),Implemented,External user authentication through federated identity providers,IT Security,Federation Configuration
+System and Communications Protection,SC-1,System and Communications Protection Policy and Procedures,Implemented,Communications protection policies in ISP-001 Section 3,CISO,SharePoint/Policies/ISP-001
+System and Communications Protection,SC-2,Application Partitioning,Implemented,Application tier separation with network controls,Security Architecture,Network Architecture
+System and Communications Protection,SC-3,Security Function Isolation,Implemented,Security functions isolated in dedicated security zones,Security Architecture,Security Architecture Document
+System and Communications Protection,SC-4,Information in Shared Resources,Implemented,Memory and storage clearing procedures implemented,IT Operations,System Hardening Guides
+System and Communications Protection,SC-5,Denial of Service Protection,Implemented,DDoS protection through cloud WAF and rate limiting,Network Security,WAF Configuration
+System and Communications Protection,SC-7,Boundary Protection,Implemented,Next-generation firewalls with IPS at network boundaries,Network Security,Firewall Rules
+System and Communications Protection,SC-8,Transmission Confidentiality and Integrity,Implemented,TLS 1.2+ encryption for all data transmission,Security Architecture,TLS Configuration
+System and Communications Protection,SC-12,Cryptographic Key Establishment and Management,Implemented,Azure Key Vault for key management with HSM backing,Security Architecture,Key Vault Documentation
+System and Communications Protection,SC-13,Cryptographic Protection,Implemented,AES-256 encryption standards documented and implemented,Security Architecture,STD-CRYPTO-001
+System and Communications Protection,SC-15,Collaborative Computing Devices,Implemented,Video conferencing security controls and monitoring,IT Security,Teams/Zoom Policies
+System and Communications Protection,SC-17,Public Key Infrastructure Certificates,Implemented,Internal PKI with automated certificate lifecycle management,Security Architecture,PKI Documentation
+System and Communications Protection,SC-20,Secure Name/Address Resolution Service,Implemented,DNS filtering and secure DNS over HTTPS implementation,Network Security,DNS Configuration
+System and Communications Protection,SC-21,Secure Name/Address Resolution Service (Recursive or Caching Resolver),Implemented,Internal DNS servers with security controls,Network Security,DNS Architecture
+System and Communications Protection,SC-22,Architecture and Provisioning for Name/Address Resolution Service,Implemented,Redundant DNS architecture with security monitoring,Network Security,DNS Documentation
+Incident Response,IR-1,Incident Response Policy and Procedures,Implemented,Comprehensive incident response plan maintained and tested,CISO,Incident Response Plan v4.1
+Incident Response,IR-2,Incident Response Training,Implemented,Quarterly tabletop exercises and annual training program,Security Training,Training Records
+Incident Response,IR-3,Incident Response Testing,Implemented,Annual incident response plan testing with external facilitation,Security Operations,Test Reports
+Incident Response,IR-4,Incident Handling,Implemented,24/7 incident response capability with documented procedures,Security Operations,ServiceNow Incident Module
+Incident Response,IR-5,Incident Monitoring,Implemented,SIEM-based incident detection with automated alerting,Security Operations,Splunk/SOAR Integration
+Incident Response,IR-6,Incident Reporting,Implemented,Incident reporting procedures with regulatory notification timelines,Security Operations,Incident Response Plan
+Incident Response,IR-7,Incident Response Assistance,Implemented,External incident response support contracts in place,Security Operations,Vendor Contracts
+Incident Response,IR-8,Incident Response Plan,Implemented,Comprehensive incident response plan with regular updates,CISO,Incident Response Plan v4.1

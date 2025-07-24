@@ -1,0 +1,43 @@
+Control ID,Control Family,Implementation Status,Responsible Party,Implementation Notes,Last Review Date,Next Review Date
+AC-1,Access Control,Implemented,CISO Office,Access control policy updated annually,2025-06-15,2026-06-15
+AC-2,Access Control,Implemented,IAM Team,Account lifecycle management in place,2025-07-01,2025-10-01
+AC-2(1),Access Control,Implemented,IAM Team,Automated account management via Active Directory,2025-07-01,2025-10-01
+AC-2(2),Access Control,Implemented,IAM Team,Emergency accounts disabled after 24 hours,2025-07-01,2025-10-01
+AC-2(3),Access Control,Implemented,IAM Team,Accounts disabled after 35 days inactivity,2025-07-01,2025-10-01
+AC-2(5),Access Control,Implemented,IAM Team,Auto-logout after 15 minutes inactivity,2025-07-01,2025-10-01
+AC-2(12),Access Control,Partially Implemented,SOC Team,Privileged account monitoring in progress,2025-07-15,2025-08-15
+AC-3,Access Control,Implemented,IAM Team,RBAC implemented across all systems,2225-06-01,2025-09-01
+AC-6,Access Control,Implemented,IAM Team,Least privilege principle enforced,2025-06-01,2025-09-01
+AC-6(1),Access Control,Implemented,IAM Team,Security function access restricted,2025-06-01,2025-09-01
+AC-6(2),Access Control,Implemented,IAM Team,Non-privileged accounts for non-security functions,2025-06-01,2025-09-01
+AC-6(7),Access Control,Implemented,IAM Team,Annual privilege reviews completed,2025-05-01,2026-05-01
+AC-7,Access Control,Implemented,IAM Team,Account lockout after 5 failed attempts,2025-06-01,2025-09-01
+AC-8,Access Control,Implemented,Legal/Compliance,System use banners on all systems,2025-06-01,2025-09-01
+AC-11,Access Control,Implemented,IT Operations,Screen lock after 15 minutes,2025-06-01,2025-09-01
+AC-12,Access Control,Implemented,IT Operations,Session timeout after 30 minutes,2025-06-01,2025-09-01
+AC-17,Access Control,Implemented,Network Team,VPN required for remote access,2025-07-01,2025-10-01
+AC-17(2),Access Control,Implemented,Network Team,VPN uses AES-256 encryption,2025-07-01,2025-10-01
+IA-2,Identification and Authentication,Implemented,IAM Team,MFA required for all users,2025-07-10,2025-10-10
+IA-2(1),Identification and Authentication,Implemented,IAM Team,MFA for privileged accounts,2025-07-10,2025-10-10
+IA-2(2),Identification and Authentication,Implemented,IAM Team,MFA for non-privileged accounts,2025-07-10,2025-10-10
+IA-5,Identification and Authentication,Implemented,IAM Team,Password policy enforces complexity,2025-06-01,2025-09-01
+IA-5(1),Identification and Authentication,Implemented,IAM Team,Password-based authentication requirements,2025-06-01,2025-09-01
+SC-13,System and Communications Protection,Implemented,Security Team,FIPS 140-2 validated cryptography,2025-06-15,2025-09-15
+SC-28,System and Communications Protection,Implemented,Security Team,Data at rest encryption implemented,2025-06-15,2025-09-15
+AU-2,Audit and Accountability,Implemented,SOC Team,Audit events defined and implemented,2025-07-01,2025-10-01
+AU-3,Audit and Accountability,Implemented,SOC Team,Audit record content requirements met,2025-07-01,2025-10-01
+AU-6,Audit and Accountability,Implemented,SOC Team,Audit review and analysis procedures,2025-07-01,2025-10-01
+AU-12,Audit and Accountability,Implemented,SOC Team,Audit generation capability implemented,2025-07-01,2025-10-01
+CM-2,Configuration Management,Implemented,IT Operations,Baseline configurations documented,2025-06-20,2025-09-20
+CM-6,Configuration Management,Implemented,IT Operations,Configuration settings documented,2025-06-20,2025-09-20
+CP-9,Contingency Planning,Implemented,IT Operations,Backup and recovery procedures,2025-07-05,2025-10-05
+CP-10,Contingency Planning,Implemented,IT Operations,System recovery and reconstitution,2025-07-05,2025-10-05
+IR-1,Incident Response,Implemented,CISO Office,Incident response policy and procedures,2025-06-01,2026-06-01
+IR-4,Incident Response,Implemented,SOC Team,Incident handling procedures,2025-07-01,2025-10-01
+IR-6,Incident Response,Implemented,SOC Team,Incident reporting procedures,2025-07-01,2025-10-01
+PE-2,Physical and Environmental Protection,Implemented,Facilities Team,Physical access authorizations,2025-06-01,2025-09-01
+PE-3,Physical and Environmental Protection,Implemented,Facilities Team,Physical access control,2025-06-01,2025-09-01
+RA-5,Risk Assessment,Implemented,Security Team,Vulnerability scanning implemented,2025-07-15,2025-10-15
+SA-4,System and Services Acquisition,Implemented,Procurement,Acquisition process includes security,2025-06-01,2025-12-01
+SI-2,System and Information Integrity,Implemented,IT Operations,Flaw remediation process,2025-07-01,2025-10-01
+SI-4,System and Information Integrity,Implemented,SOC Team,Information system monitoring,2025-07-01,2025-10-01
